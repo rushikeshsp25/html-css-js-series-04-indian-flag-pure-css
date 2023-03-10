@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Flag - Pure CSS</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+        *:has(.container),
+        .container {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .container {
+            display: grid;
+            place-content: center;
+        }
+        .flag {
+            border: 1px solid black;
+            width: min(75vw, 75vh);
+            aspect-ratio: 2/1;
+            display: flex;
+            flex-direction: column;
+        }
+        .flag>div {
+            flex: 1;
+        }
+        .flag>div:nth-child(1) {
+            background-color: #ff671f;
+        }
+        .flag>div:nth-child(2) {
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .flag>div:nth-child(2) .chakra {
+            border: min(1vw, 1vh) solid #06038d;
+            border-radius: 50%;
+            height: 90%;
+            aspect-ratio: 1/1;
+            position: relative;
+        }
+        .flag>div:nth-child(2) .chakra div {
+            width: 100%;
+            height: min(0.5vw, 0.5vh);
+            background-color: #06038d;
+            position: absolute;
+            top: calc(50% - min(0.5vw, 0.5vh) / 2);
+        }
+
+        .flag>div:nth-child(2) .chakra div:nth-child(1) {
+            rotate: calc(1deg * (1 * 180 / 12));
+        }
+
+        .flag>div:nth-child(2) .chakra div:nth-child(2) {
+            rotate: calc(1deg * (2 * 180 / 12));
+        }
+
+        .flag>div:nth-child(2) .chakra div:nth-child(3) {
+            rotate: calc(1deg * (3 * 180 / 12));
+        }
+
+        .flag>div:nth-child(2) .chakra div:nth-child(4) {
+            rotate: calc(1deg * (4 * 180 / 12));
+        }
+
+        .flag>div:nth-child(2) .chakra div:nth-child(5) {
+            rotate: calc(1deg * (5 * 180 / 12));
+        }
+
+        .flag>div:nth-child(2) .chakra div:nth-child(6) {
+            rotate: calc(1deg * (6 * 180 / 12));
+        }
+
+        .flag>div:nth-child(2) .chakra div:nth-child(7) {
+            rotate: calc(1deg * (7 * 180 / 12));
+        }
+
+        .flag>div:nth-child(2) .chakra div:nth-child(8) {
+            rotate: calc(1deg * (8 * 180 / 12));
+        }
+
+        .flag>div:nth-child(2) .chakra div:nth-child(9) {
+            rotate: calc(1deg * (9 * 180 / 12));
+        }
+
+        .flag>div:nth-child(2) .chakra div:nth-child(10) {
+            rotate: calc(1deg * (10 * 180 / 12));
+        }
+
+        .flag>div:nth-child(2) .chakra div:nth-child(11) {
+            rotate: calc(1deg * (11 * 180 / 12));
+        }
+
+        .flag>div:nth-child(2) .chakra div:nth-child(12) {
+            rotate: calc(1deg * (12 * 180 / 12));
+        }
+
+        .flag>div:nth-child(3) {
+            background-color: #046a38;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="flag">
+            <div></div>
+            <div>
+                <div class="chakra">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div></div>
+        </div>
+    </div>
+</body>
+
+</html>
